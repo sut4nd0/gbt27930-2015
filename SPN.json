@@ -1,0 +1,1171 @@
+{
+    "9728": [
+        {
+            "起始字节或位": 1,
+            "长度": 3,
+            "SPN": "2600",
+            "process_mode": "select",
+            "definition_data": [
+                "000101"
+            ],
+            "content": [
+                "充电机通信协议版本号为V1.1"
+            ]
+        }
+    ],
+    "9984": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "2601",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "最高允许充电总电压"
+        }
+    ],
+    "256": [
+        {
+            "起始字节或位": 1,
+            "长度": 1,
+            "SPN": "2560",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "AA"
+            ],
+            "content": [
+                "辨识结果:BMS不能辨识",
+                "辨识结果:BMS能辨识"
+            ]
+        },
+        {
+            "起始字节或位": 2,
+            "长度": 4,
+            "SPN": "2561",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "",
+            "content": "充电机编号"
+        },
+        {
+            "起始字节或位": 6,
+            "长度": 3,
+            "SPN": "2562",
+            "process_mode": "ascii",
+            "content": "充电机/充电站所在区域编码"
+        }
+    ],
+    "512": [
+        {
+            "起始字节或位": 1,
+            "长度": 3,
+            "SPN": "2565",
+            "process_mode": "select",
+            "definition_data": [
+                "000101"
+            ],
+            "content": [
+                "充电机通信协议版本号为V1.1"
+            ]
+        },
+        {
+            "起始字节或位": 4,
+            "长度": 1,
+            "SPN": "2566",
+            "process_mode": "select",
+            "definition_data": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "FF"
+            ],
+            "content": [
+                "电池类型:铅酸电池",
+                "电池类型:镍氢电池",
+                "电池类型:磷酸铁锂电池",
+                "电池类型:锰酸锂电池",
+                "电池类型:钴酸锂电池",
+                "电池类型:三元材料电池",
+                "电池类型:聚合物锂离子电池",
+                "电池类型:钛酸锂电池",
+                "电池类型:其他电池"
+            ]
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 2,
+            "SPN": "2567",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "Ah",
+            "content": "整车动力蓄电池系统额定容量"
+        },
+        {
+            "起始字节或位": 7,
+            "长度": 2,
+            "SPN": "2568",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "整车动力蓄电池系统额定总电压"
+        },
+        {
+            "起始字节或位": 9,
+            "长度": 4,
+            "SPN": "2569",
+            "process_mode": "ascii",
+            "content": "电池生产厂商名称"
+        },
+        {
+            "起始字节或位": 13,
+            "长度": 4,
+            "SPN": "2570",
+            "process_mode": "null",
+            "content": "电池组序号预留由厂商自行定义"
+        },
+        {
+            "起始字节或位": 17,
+            "长度": 3,
+            "SPN": "2571",
+            "process_mode": "date",
+            "content": "电池组生产日期"
+        },
+        {
+            "起始字节或位": 20,
+            "长度": 3,
+            "SPN": "2572",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "次",
+            "content": "电池组充电次数"
+        },
+        {
+            "起始字节或位": 23,
+            "长度": 1,
+            "SPN": "2573",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01"
+            ],
+            "content": [
+                "电池组产权表:租赁",
+                "电池组产权表:自有"
+            ]
+        },
+        {
+            "起始字节或位": 24,
+            "长度": 1,
+            "SPN": "2574",
+            "process_mode": "null",
+            "content": "预留"
+        },
+        {
+            "起始字节或位": 25,
+            "长度": 17,
+            "SPN": "2575",
+            "process_mode": "ascii",
+            "content": "车辆识别码（VIN）"
+        },
+        {
+            "起始字节或位": 42,
+            "长度": 1,
+            "SPN": "2576",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "",
+            "content": "版本流水号"
+        },
+        {
+            "起始字节或位": 43,
+            "长度": 4,
+            "SPN": "2576",
+            "process_mode": "date",
+            "content": "编译时间"
+        },
+        {
+            "起始字节或位": 47,
+            "长度": 3,
+            "SPN": "2576",
+            "process_mode": "null",
+            "content": "预留FFFFFF"
+        }
+    ],
+	"1536": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "2816",
+            "process_mode": "calculate",
+            "data_resolution": 0.01,
+            "offset": 0,
+            "units": "V",
+            "content": "单体动力蓄电池最高允许充电电压"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 2,
+            "SPN": "2817",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": -400,
+            "units": "A",
+            "content": "最高允许充电电流"
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 2,
+            "SPN": "2818",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "kW·h",
+            "content": "动力蓄电池标称总能量"
+        },
+        {
+            "起始字节或位": 7,
+            "长度": 2,
+            "SPN": "2819",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "最高允许充电总电压"
+        },
+        {
+            "起始字节或位": 9,
+            "长度": 1,
+            "SPN": "2820",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": -50,
+            "units": "℃",
+            "content": "最高允许温度"
+        },
+        {
+            "起始字节或位": 10,
+            "长度": 2,
+            "SPN": "2821",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "%",
+            "content": "整车动力蓄电池荷电状态"
+        },
+        {
+            "起始字节或位": 12,
+            "长度": 2,
+            "SPN": "2822",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "整车动力蓄电池当前电池电压"
+        }
+    ],
+    "1792": [
+        {
+            "起始字节或位": 1,
+            "长度": 7,
+            "SPN": "2823",
+            "process_mode": "date",
+            "content": "充电机发送给BMS的时间同步信息"
+        }
+    ],
+    "2048": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "2824",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "最高输出电压(V)"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 2,
+            "SPN": "2825",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "最低输出电压(V)"
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 2,
+            "SPN": "2826",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": -400,
+            "units": "A",
+            "content": "最大输出电流(A)"
+        },
+        {
+            "起始字节或位": 7,
+            "长度": 2,
+            "SPN": "2827",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": -400,
+            "units": "A",
+            "content": "最小输出电流(A)"
+        }
+    ],
+    "2304": [
+        {
+            "起始字节或位": 1,
+            "长度": 1,
+            "SPN": "2829",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "AA"
+            ],
+            "content": [
+                "辨识结果:BMS未准备好",
+                "辨识结果:BMS完成充电准备"
+            ]
+        }
+    ],
+    "2560": [
+        {
+            "起始字节或位": 1,
+            "长度": 1,
+            "SPN": "2830",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "AA"
+            ],
+            "content": [
+                "辨识结果:充电机未完成准备",
+                "辨识结果:充电机完成准备"
+            ]
+        }
+    ],
+    "4096": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "3072",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "电压需求"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 2,
+            "SPN": "3073",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": -400,
+            "units": "A",
+            "content": "电流需求"
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 1,
+            "SPN": "3074",
+            "process_mode": "select",
+            "definition_data": [
+                "01",
+                "02"
+            ],
+            "content": [
+                "辨识结果:恒压充电",
+                "辨识结果:恒流充电"
+            ]
+        }
+    ],
+    "4352": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "3075",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "充电电压测量值(V)"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 2,
+            "SPN": "3076",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": -400,
+            "units": "A",
+            "content": "充电电流测量值(A)"
+        },
+        {
+            "起始字节或位": 5.1,
+            "长度": 12,
+            "SPN": "3077",
+            "process_mode": "calculate",
+            "data_resolution": 0.01,
+            "offset": 0,
+            "units": "V",
+            "content": "最高单体动力蓄电池电压"
+        },
+        {
+            "起始字节或位": 6.4,
+            "长度": 4,
+            "SPN": "3077",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "",
+            "content": "动力蓄电池电池电压所在组号"
+        },
+        {
+            "起始字节或位": 7,
+            "长度": 1,
+            "SPN": "3078",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "%",
+            "content": "当前荷电状态SOC(%)"
+        },
+        {
+            "起始字节或位": 8,
+            "长度": 2,
+            "SPN": "3079",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "min",
+            "content": "估算剩余充电时间(min)"
+        }
+    ],
+    "4608": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "3081",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "V",
+            "content": "电压输出值（V）"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 2,
+            "SPN": "3082",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": -400,
+            "units": "A",
+            "content": "电流输出值(A)"
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 2,
+            "SPN": "3083",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "min",
+            "content": "累计充电时间(min)"
+        },
+        {
+            "起始字节或位": 7.1,
+            "长度": 2,
+            "SPN": "3929",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01"
+            ],
+            "content": [
+                "辨识结果:暂停",
+                "辨识结果:允许"
+            ]
+        }
+    ],
+    "4864": [
+        {
+            "起始字节或位": 1,
+            "长度": 1,
+            "SPN": "3085",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 1,
+            "units": "",
+            "content": "最高单体动力蓄电池电压所在编号"
+        },
+        {
+            "起始字节或位": 2,
+            "长度": 1,
+            "SPN": "3086",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": -50,
+            "units": "℃",
+            "content": "最高动力蓄电池温度"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 1,
+            "SPN": "3087",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 1,
+            "units": "",
+            "content": "最高温度检测点编号"
+        },
+        {
+            "起始字节或位": 4,
+            "长度": 1,
+            "SPN": "3088",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": -50,
+            "units": "℃",
+            "content": "最低动力蓄电池温度"
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 1,
+            "SPN": "3089",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 1,
+            "units": "",
+            "content": "最低动力蓄电池温度检测点编号"
+        },
+        {
+            "起始字节或位": 6.1,
+            "长度": 2,
+            "SPN": "3090",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "辨识结果:单体动力蓄电池电压正常",
+                "辨识结果:单体动力蓄电池电压过高",
+                "辨识结果:单体动力蓄电池电压过低"
+            ]
+        },
+        {
+            "起始字节或位": 6.3,
+            "长度": 2,
+            "SPN": "3091",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "辨识结果:整车动力蓄电池荷电状态正常",
+                "辨识结果:整车动力蓄电池荷电状态过高",
+                "辨识结果:整车动力蓄电池荷电状态过低"
+            ]
+        },
+        {
+            "起始字节或位": 6.5,
+            "长度": 2,
+            "SPN": "3092",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "辨识结果:动力蓄电池充电过电流正常",
+                "辨识结果:动力蓄电池充电过电流过流",
+                "辨识结果:动力蓄电池充电过电流不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 6.7,
+            "长度": 2,
+            "SPN": "3093",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "辨识结果:动力蓄电池温度正常",
+                "辨识结果:动力蓄电池温度过高",
+                "辨识结果:动力蓄电池温度不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 7.1,
+            "长度": 2,
+            "SPN": "3094",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "辨识结果:动力蓄电池绝缘状态正常",
+                "辨识结果:动力蓄电池绝缘状态不正常",
+                "辨识结果:动力蓄电池绝缘状态不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 7.3,
+            "长度": 2,
+            "SPN": "3095",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "辨识结果:动力蓄电池组输出连接器连接状态正常",
+                "辨识结果:动力蓄电池组输出连接器连接状态不正常",
+                "辨识结果:动力蓄电池组输出连接器连接状态不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 7.5,
+            "长度": 2,
+            "SPN": "3096",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01"
+            ],
+            "content": [
+                "辨识结果:充电禁止",
+                "辨识结果:充电允许"
+            ]
+        }
+    ],
+    "6400": [
+        {
+            "起始字节或位": 1.1,
+            "长度": 2,
+            "SPN": "3511",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，未达到所需求的SOC目标值",
+                "BMS中止充电原因：达到需求所需求的SOC目标值",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 1.3,
+            "长度": 2,
+            "SPN": "3511",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，未达到总电压设定值",
+                "BMS中止充电原因：达到总电压设定值",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 1.5,
+            "长度": 2,
+            "SPN": "3511",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，未达到单体电压的设定值",
+                "BMS中止充电原因：达到单体电压的设定值",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 1.7,
+            "长度": 2,
+            "SPN": "3511",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，充电机未主动中止(正常)",
+                "BMS中止充电原因：充电机主动中止(收到CST帧)",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.1,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，绝缘正常",
+                "BMS中止充电原因：绝缘故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.3,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，输出连接器温度正常",
+                "BMS中止充电原因：输出连接器过温故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.5,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电，BMS原件、输出连接器温度正常",
+                "BMS中止充电原因：BMS原件、输出连接器过温",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.7,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充，电充电连接器正常",
+                "BMS中止充电原因：充电连接器故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 3.1,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电原因电池组温度正常",
+                "BMS中止充电原因:电池组温度过高故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 3.3,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电高压继电器正常",
+                "BMS中止充电原因:高压继电器故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 3.5,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电检测点2电压检测正常",
+                "BMS中止充电原因:检测点2电压检测故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 3.7,
+            "长度": 2,
+            "SPN": "3512",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS无其它中止充电故障",
+                "BMS中止充电原因:其它故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 4.1,
+            "长度": 2,
+            "SPN": "3513",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS中止充电错误为电流过大",
+                "BMS中止充电错误为电流超过需求值",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 4.3,
+            "长度": 2,
+            "SPN": "3513",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "BMS未中止充电电压正常",
+                "BMS中止充电错误电压异常",
+                "不可信状态"
+            ]
+        }
+    ],
+    "6656": [
+        {
+            "起始字节或位": 1.1,
+            "长度": 2,
+            "SPN": "3521",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "未达到充电机设定的条件中止(正常)",
+                "达到充电机设定的条件中止",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 1.3,
+            "长度": 2,
+            "SPN": "3521",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未被人工中止充电(正常)",
+                "充电机中止充电原因:人工中止",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 1.5,
+            "长度": 2,
+            "SPN": "3521",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，无故障",
+                "充电机中止充电原因：故障中止",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 1.7,
+            "长度": 2,
+            "SPN": "3521",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，BMS未主动中止(正常)",
+                "充电机中止充电原因：BMS主动中止(收到BST帧)",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.1,
+            "长度": 2,
+            "SPN": "3522",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，充电机温度正常",
+                "充电机中止充电故障原因：充电机过温",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.3,
+            "长度": 2,
+            "SPN": "3522",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，充电连接器正常",
+                "充电机中止充电故障原因：充电连接器故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.5,
+            "长度": 2,
+            "SPN": "3522",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，充电机内部温度正常",
+                "充电机中止充电故障原因：充电机内部过温故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 2.7,
+            "长度": 2,
+            "SPN": "3522",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，所需电量传送正常",
+                "充电机中止充电故障原因：所需电量不能传送",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 3.1,
+            "长度": 2,
+            "SPN": "3522",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，充电机未急停(正常)",
+                "充电机中止充电故障原因：充电机急停故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 3.3,
+            "长度": 2,
+            "SPN": "3522",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止充电，无其它故障(正常)",
+                "充电机中止充电故障原因：其它故障",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 4.1,
+            "长度": 1,
+            "SPN": "3523",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止，无充电错误原因，电流匹配",
+                "充电机中止充电错误原因：电流不匹配",
+                "不可信状态"
+            ]
+        },
+        {
+            "起始字节或位": 4.3,
+            "长度": 1,
+            "SPN": "3523",
+            "process_mode": "select",
+            "definition_data": [
+                "00",
+                "01",
+                "10"
+            ],
+            "content": [
+                "充电机未中止，无充电错误原因，电压正常",
+                "充电机中止充电错误原因：电压异常",
+                "不可信状态"
+            ]
+        }
+    ],
+    "7168": [
+        {
+            "起始字节或位": 1,
+            "长度": 1,
+            "SPN": "3601",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "%",
+            "content": "中止时SOC值"
+        },
+        {
+            "起始字节或位": 2,
+            "长度": 2,
+            "SPN": "3602",
+            "process_mode": "calculate",
+            "data_resolution": 0.01,
+            "offset": 0,
+            "units": "V",
+            "content": "动力蓄电池单体最低电压"
+        },
+        {
+            "起始字节或位": 4,
+            "长度": 2,
+            "SPN": "3603",
+            "process_mode": "calculate",
+            "data_resolution": 0.01,
+            "offset": 0,
+            "units": "V",
+            "content": "动力蓄电池单体最高电压"
+        },
+        {
+            "起始字节或位": 6,
+            "长度": 1,
+            "SPN": "3604",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": -50,
+            "units": "℃",
+            "content": "动力蓄电池最低温度"
+        },
+        {
+            "起始字节或位": 7,
+            "长度": 1,
+            "SPN": "3605",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": -50,
+            "units": "℃",
+            "content": "动力蓄电池最高温度"
+        }
+    ],
+    "7424": [
+        {
+            "起始字节或位": 1,
+            "长度": 2,
+            "SPN": "3611",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 0,
+            "units": "min",
+            "content": "累计充电时间"
+        },
+        {
+            "起始字节或位": 3,
+            "长度": 2,
+            "SPN": "3612",
+            "process_mode": "calculate",
+            "data_resolution": 0.1,
+            "offset": 0,
+            "units": "kW·h",
+            "content": "累计输出能量"
+        },
+        {
+            "起始字节或位": 5,
+            "长度": 4,
+            "SPN": "3613",
+            "process_mode": "calculate",
+            "data_resolution": 1,
+            "offset": 1,
+            "units": "",
+            "content": "充电机编号（1/位,1偏移量,数据范围:0~0xFFFFFFFF）"
+        }
+    ]
+}
